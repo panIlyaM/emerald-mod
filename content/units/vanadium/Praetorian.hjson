@@ -1,0 +1,125 @@
+	"name": "Praetorian"
+  "type": "legs",
+	"speed": 0.58,
+	"hitSize": 23,
+	"health": 9800,
+	"faceTarget": true,
+	"armor": 6,
+	"range": 200,
+	"targetAir": true,
+	"rotateSpeed": 2.6,
+            "legMoveSpace": 1,
+            "legMaxLength": 1.2,
+            "legMinLength": 0.3,
+            "legLengthScl": 0.96,
+            "legForwardScl": 0.5,
+            "legPhysicsLayer": true,
+         "legGroupSize": 4		,
+         "legCount": 6,
+         "legExtension": 1,
+        "legContinuousMove": true,
+        "lockLegBase": false,
+        "rippleScale": 0.2,
+	"legBaseOffset": 0,
+	"legLength": 45, 
+	"hovering": false,
+"weapons": [
+		{
+    "name": "Praetorian-weapon",
+	"rotateSpeed":3
+    "reload": 70,
+    "mirror": true,
+    "x": 10,
+    "y": 0.2,
+    "shootY": 4	,
+    "recoil": 1.5,
+    "rotate": true,
+shoot: {
+type: ShootBarrel
+  shots: 6
+  shotDelay: 3
+   barrels: [
+    -0.7, 3, 0,
+    1.75, 1, 0
+	]
+}
+    shootSound: shootAltLong
+    bullet: {
+    type: MissileBulletType
+      speed: 2.5
+      lifetime: 80
+      damage: 30
+      width: 7
+      height: 7
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+        }
+      ]
+    }
+    }
+			{
+    "name": "Praetorian-artillery-weapon",
+	"rotateSpeed":2
+    "reload": 50,
+    "mirror": false,
+    "x": 0,
+    "y": -8,
+    "shootY": 4	,
+    "recoil": 1.5,
+    "rotate": true,
+"shoot": {
+"type": "shootAlternate",
+ "shots": 1,
+    "shotDelay": 50,
+}
+    shootSound: bang
+	shoot: {
+type: ShootBarrel
+  shots: 1
+  shotDelay: 20
+  spread: 10
+   barrels: [
+    2, 2, 0,
+    -2, 2, 0
+	]
+}
+    bullet: {
+    type: ArtilleryBulletType
+      speed: 2.5
+      lifetime: 100
+      damage: 150
+      width: 10
+      height: 14	
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+        }
+      ]
+    }
+    }
+]
+research: {
+    parent: "Hastatus",
+}
+researchCostMultiplier: 0

@@ -1,0 +1,75 @@
+	"name": Triarius
+  "type": "legs",
+	"speed": 0.7,
+	"hitSize": 13,
+	"health": 980,
+	"faceTarget": true,
+	"armor": 4,
+	"range": 190,
+	"targetAir": true,
+	"rotateSpeed": 2.8,
+            "legMoveSpace": 1,
+            "legMaxLength": 1.2,
+            "legMinLength": 0.3,
+            "legLengthScl": 0.96,
+            "legForwardScl": 0.5,
+            "legPhysicsLayer": true,
+         "legGroupSize": 4,
+         "legCount": 6,
+         "legExtension": 1,
+        "legContinuousMove": true,
+        "lockLegBase": false,
+        "rippleScale": 0.2,
+	"legBaseOffset": 0,
+	"legLength": 18, 
+	"hovering": false,
+"weapons": [
+		{
+    "name": "Triarius-weapon",
+	"rotateSpeed":4
+    "reload": 70,
+    "mirror": true,
+    "x": 5,
+    "y": 0.2,
+    "shootY": 4	,
+    "recoil": 1.5,
+    "rotate": true,
+"shoot": {
+"type": "shootPattern",
+ "shots": 1,
+    "shotDelay": 100,
+}
+    shootSound: shootAltLong
+	shoot: {
+      shots: 5
+      shotDelay: 8
+    }
+    bullet: {
+    type: MissileBulletType
+      speed: 2.5
+      lifetime: 80
+      damage: 30
+      width: 7
+      height: 7
+      despawnHit: true
+      despawnEffect: none
+      hitEffect: [
+        {
+          type: ParticleEffect
+          particles: 6
+          line: true
+          lifetime: 25
+          length: 20
+          lenFrom: 5
+          lenTo: 0
+          strokeFrom: 2
+          strokeTo: 0
+        }
+      ]
+    }
+    }
+]
+research: {
+    parent: "Hastatus",
+}
+researchCostMultiplier: 0
