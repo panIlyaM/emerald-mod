@@ -1,0 +1,14 @@
+type: Wall
+name: emerald wall
+description:emerald wall
+size: 1
+armor:2
+health: 700
+squareSprite: true
+requirements: [
+  emerald/6
+  titanium/3
+]
+research: titanium-wall
+category: defense
+researchCostMultiplier: 0.5

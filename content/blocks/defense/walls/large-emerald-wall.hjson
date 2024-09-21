@@ -1,0 +1,14 @@
+type: Wall
+name: Large emerald wall
+description: Large-emerald-wall
+size: 2
+health: 2800
+armor:4
+category: defense
+squareSprite: true
+research: emerald-wall
+requirements: [
+  emerald/24
+  titanium/12
+] 
+researchCostMultiplier: 0.5
