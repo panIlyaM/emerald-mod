@@ -1,0 +1,129 @@
+type: legs
+legCount: 4
+legLength: 120
+legSpeed: 6
+legForwardScl: 0.56
+legMoveSpace: 2
+hovering: true
+groundLayer: 60
+name: RATISLAWCHIK
+description: RATISLAWCHIK invalid yobani
+health: 6500
+armor: 2
+speed: 7
+hitSize: 40
+isEnemy: true
+alwaysUnlocked: true
+outlineColor: 42413e
+abilities: [
+]
+weapons: [
+  {
+    name: LUBOV-IVANOVA
+    x: 35
+    y: 30
+    mirror: true
+	shootSound: shootAltLong
+    reload: 5
+    shootSound: shootAltLong
+    rotate: true
+    ejectEffect: casing2
+    bullet: {
+      type: MissileBulletType
+	  homingPower: 10
+	   speed: 10
+      damage: 180
+      height: 30
+	  width: 60
+      status: none
+      statusDuration: 0
+    }
+  }
+  {
+    name: NADEJDA-VALENTINOWNA
+    x: 70
+    y: -40
+    mirror: true
+    reload: 5
+    shootSound: 
+    rotate: true
+    ejectEffect: casing2
+    bullet: {
+      type: basicBulletType
+      buildingDamageMultiplier: 1
+      damage: 220
+	   speed: 6
+      height: 40
+	  width: 60
+      status: none
+      statusDuration: 0
+    }
+  }
+  {
+    name: ilux-prime
+    x: 0
+    y: -9
+    reload: 150
+    mirror: false
+    rotate: true
+    ejectEffect: none
+    shootSound: shootAltLong
+    bullet: {
+      type: BasicBulletType
+      buildingDamageMultiplier: 1
+      speed: 2
+      lifetime: 180
+      damage: 180
+      splashDamage: 80
+      splashDamageRadius: 120
+      width: 30
+      height: 70
+      pierceBuilding: false
+      pierce: true
+      pierceCap: 2
+      trailChance: -1
+      trailEffect: dynamicSpikes
+      shootEffect: shootSmall
+      smokeEffect: shootSmallSmoke
+      buildingDamageMultiplier: 1
+      fragBullets: 16
+      fragSpread: 90
+      fragRandomSpread: 0
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      homingPower: 0
+      fragBullet: {
+        type: BasicBulletType
+        pierce: true
+        pierceCap: 1
+        pierceBuilding: false
+        sprite: shell
+        homingPower: 0
+        speed: 4
+        lifetime: 150
+        damage: 80
+        splashDamage: 40
+        splashDamageRadius: 60
+        width: 20
+        height: 40
+        buildingDamageMultiplier: 1
+      }
+    }
+  }
+  {
+    x: 2.8
+    y: 4
+    mirror: true
+    alternate: true
+    reload: 150
+    rotate: false
+    shootSound: missile
+    bullet: {
+      instantDisappear: true
+      damage: 0
+      spawnUnit: death-file-missile
+    }
+}
+]

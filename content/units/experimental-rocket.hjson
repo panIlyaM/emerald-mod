@@ -1,0 +1,40 @@
+type: missile
+name: experimental rocket
+physics: false
+template: MissileUnitType
+flying: true
+speed: 3
+useUnitCap: false
+engineSize: 1
+engineOffset: 0
+lifetime: 100
+rotateSpeed: 2
+hitSize: 6
+trailLength: 10
+autoFindTarget: true
+homingDelay: 5
+circleTarget: false
+faceTarget: true
+health: 100
+trailColor: ffa664
+aimDst: 4
+drawCell: true
+range: 4
+hidden: true  
+weapons: [
+  {
+    reload: 1
+    shake: 0
+    shootOnDeath: true
+    mirror: true
+    shootCone: 360
+    shake: 1
+    bullet: {
+      type: ExplosionBulletType
+      despawnShake: 0
+      hitShake: 0
+      splashDamage: 180
+      splashDamageRadius: 20
+    }
+  } 
+]
