@@ -1,0 +1,84 @@
+type: ItemTurret
+category: turret
+name: emerald turret
+size: 2
+health: 500
+description: no description yet
+reload: 5
+range: 225
+recoil: 0.8
+inaccuracy: 8
+ammoUseEffect: casing1
+
+ammoTypes: {
+	emerald: {
+		type: BasicBulletType
+		damage: 25
+		speed: 8
+		lifetime: 27.5
+		
+		width: 5
+		height: 15
+		
+		ammoMultiplier: 2
+	}
+	titanium: {
+		type: BasicBulletType
+		damage: 20
+		speed: 10
+		lifetime: 22
+		
+		width: 5
+		height: 20
+		ammoMultiplier: 2
+	}
+	silicon: {
+    type: BasicBulletType
+    damage: 12
+	
+    height: 12
+    width: 7
+	
+    speed: 5
+    homingPower: 0.5
+    lifetime: 44
+    ammoMultiplier: 3
+    smokeEffect: shootSmallSmoke
+    shootEffect: shootSmall
+  }
+}
+
+requirements: [
+    "emerald/160"
+  "titanium/80"
+  "copper/130"
+  "lead/70"
+]
+
+research: {
+    parent: salvo
+    requirements: [
+        emerald/500
+      titanium/200
+	]
+}
+drawer:{
+type: DrawTurret
+ parts: [
+     {
+         type: RegionPart
+         suffix: -part1
+         mirror: false
+         outline: false
+         progress: {
+         type: warmup
+         op: blend
+         other: heat
+         amount: 0.15
+          }
+         outlineLayerOffset: 0.001,
+         moveY: 5,
+             layerOffset: 0.02
+         }
+]
+}

@@ -1,0 +1,61 @@
+type: ItemTurret
+name: double turret
+description: heavy turret that was designed to destroy middle and some of high classes of units
+size: 3
+health: 1570
+category: turret
+research: vanadium
+squareSprite: false
+requirements: [
+  vanadium/190
+  graphite/70
+  copper/120
+  titanium/145
+]
+range: 190
+shoot: {
+  type: ShootAlternate
+  shots: 2
+  spread: 5
+}  
+reload: 15
+shootSound: shootAltLong
+researchCostMultiplier: 0.5
+velocityRnd: 0.091
+inaccuracy: 2
+drawer: {
+  type: DrawTurret 
+  parts:  [
+        {  
+          type: RegionPart
+		  suffix: -barrel
+          mirror: true
+          under: true
+          progress: recoil
+          moveY: -1.2
+        }
+        {
+          type: RegionPart
+		  suffix: -connector
+          mirror: false
+          under: false
+          progress: recoil
+          moveY: -1.6
+        }
+    ]
+}
+ammoTypes: {
+  vanadium: {
+    despawnHit: false
+    reloadMultiplier: 0.75
+    type: BasicBulletType
+    width: 8
+    height: 16
+    speed: 3.5
+    lifetime: 57
+    damage: 43
+    pierce: false
+    status: none
+    statusDuration: 0
+  }
+}

@@ -1,0 +1,88 @@
+type: ItemTurret
+category: turret
+name: four-barrel turret
+size: 3
+health: 3250
+description: no description yet
+squareSprite: false
+requirements: [
+  vanadium/340
+  copper/1200
+  titanium/650
+  thorium/400
+  plastanium/380
+]
+ammoUseEffect: casing2
+range: 340
+velocityRnd: 0.12
+targetAir: false
+targetGround: true
+reload: 80
+shootSound: artillery
+shoot: {
+  type: ShootBarrel
+  shots: 4
+  shotDelay: 0.78
+  spread: 10
+   barrels: [
+    -2, 3, 0,
+    2, 3, 0,
+    -4, 2.5, 0,
+    4, 2.5, 0
+	]
+}
+ammoTypes: {
+	graphite: {
+		type: ArtilleryBulletType
+		damage: 40
+		splashDamage: 40
+        splashDamageRadius: 60
+		speed: 3
+		lifetime: 27.5
+		
+		width: 10
+		height: 20
+		
+		ammoMultiplier: 2
+	}
+}
+drawer:{
+
+ type: DrawTurret
+
+ parts: [
+
+     {
+
+         "type": "RegionPart",
+
+          "suffix": "-part1",
+
+         "mirror": false,
+
+         outline: false
+
+        "progress": {
+
+          "type": "warmup",
+
+          "op": "blend",
+
+          "other": "heat",
+
+          "amount": 0.15
+
+          }
+
+          "outlineLayerOffset": 0.001,
+		  
+		  "under": "true",	
+
+         "moveY": -5,
+
+             layerOffset: 0.02
+
+         }
+
+]
+}
