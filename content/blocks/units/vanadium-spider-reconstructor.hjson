@@ -1,0 +1,38 @@
+type: Reconstructor
+name: spider reconstructor
+size: 3
+health: 900
+constructTime: 1750
+consumes: {
+  power: 3.8
+    items: {
+      items: [
+        graphite/20
+        silicon/30
+		vanadium/40
+      ]
+    }
+}
+upgrades: [
+  [Veles, Hastatus]
+]
+requirements: [
+  copper/230
+  silicon/120
+  emerald/140
+  lead/180
+  vanadium/230
+ 
+]
+category: units
+research: {
+    parent: "vanadium-spider-factory",
+    
+},
+researchCost: [
+  copper/2300
+  silicon/1200
+  emerald/1400
+  lead/1800
+  vanadium/2300
+  ]

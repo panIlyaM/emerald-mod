@@ -1,0 +1,49 @@
+type: Reconstructor
+name: advanced reconstructor
+size: 7
+health: 3000
+constructTime:  5300
+consumes: {
+  power: 9.4
+  liquids: [
+	  cryofluid/1.2
+]
+    items: {
+      items: [
+        titanium/700
+        silicon/760
+		emerald/500
+		vanadium/400
+		vanadium-titanium-alloy/350
+      ]
+    }
+}
+upgrades: [
+  [crystal, mineral]
+  [Triarius, Praetorian]
+]
+requirements: [
+  lead/2400
+  graphite/1000
+  titanium/1350
+  silicon/2500
+  emerald/1780
+  vanadium/1560
+  vanadium-titanium-alloy/830
+  plastanium/800
+]
+category: units
+research: {
+    parent: "main-reconstructor",
+    
+},
+researchCost: [
+   lead/24000
+  graphite/10000
+  titanium/13500
+  silicon/25000
+  emerald/17800
+  vanadium/15600
+  vanadium-titanium-alloy/8300
+  plastanium/8000
+  ]

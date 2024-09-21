@@ -1,0 +1,39 @@
+type: Reconstructor
+name: main reconstructor
+size: 5
+health: 2000
+constructTime: 2800
+consumes: {
+  power: 6.8
+    items: {
+      items: [
+        titanium/70
+        silicon/140
+		emerald/90
+		vanadium/90
+      ]
+    }
+}
+upgrades: [
+  [fragment, crystal]
+  [Hastatus, Triarius]
+]
+requirements: [
+  lead/800
+  silicon/550
+  emerald/450
+  vanadium/350
+  titanium/350
+]
+category: units
+research: {
+    parent: "geode-econstructor",
+    
+},
+researchCost: [
+    lead/8000
+  silicon/5500
+  emerald/4500
+  vanadium/3500
+  titanium/3500
+  ]

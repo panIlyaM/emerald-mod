@@ -1,0 +1,35 @@
+type: Reconstructor
+name: geode reconstructor
+size: 3
+health: 800
+constructTime: 1500
+consumes: {
+  power: 3.4
+    items: {
+      items: [
+        graphite/20
+        silicon/30
+		emerald/25
+      ]
+    }
+}
+upgrades: [
+  [shard, fragment]
+]
+requirements: [
+  copper/230
+  silicon/100
+  emerald/130
+  lead/200
+ 
+]
+category: units
+research: {
+    parent: "Constructor-1",
+    
+},
+researchCost: [
+    titanium/500
+    silicon/300
+    emerald/500
+  ]

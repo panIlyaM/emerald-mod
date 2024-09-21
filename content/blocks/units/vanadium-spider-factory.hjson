@@ -1,0 +1,44 @@
+type: UnitFactory
+name: spider factory
+size: 3
+health: 550
+category: units
+
+
+configurable: false
+
+consumes: {
+    power: 3
+}
+
+plans: [
+    {
+    unit: "Veles"
+	time: 1500
+	requirements: [
+	    "vanadium/30"
+		"lead/15"
+		"silicon/20"
+	]
+    }
+]
+
+requirements: [
+    "vanadium/250"
+	"titanium/175"
+	"copper/150"
+	"silicon/200"
+	"lead/250"
+]
+
+research: {
+    parent: "emerald"
+    requirements: [
+        "vanadium/2500"
+		"titanium/1750"
+		"copper/1500"
+		"silicon/2000"
+		"lead/2500"
+		
+    ]
+}
