@@ -1,0 +1,44 @@
+type: flying
+name: shard
+health: 140
+armor: 1
+hitSize: 9
+
+flying: true
+itemCapacity: 10
+
+speed: 4.0
+accel: 0.06
+drag: 0.04
+
+outlineColor: 565666
+
+weapons: [
+    {
+        name: shard-weapon
+        top: true
+        x: 2.0
+        y: 2.0
+		
+	    mirror: true
+	    alternate: true
+        reload: 10
+        shootSound: "pew"
+		ejectEffect: casing1
+        bullet: {
+            type: BasicBulletType
+            damage: 7
+	        lifetime: 15
+	        speed: 5.5
+			
+			width: 6
+		    height: 12
+		}
+    }
+]
+
+research: {
+    parent: "emerald"
+	requirements: [
+    ]
+}

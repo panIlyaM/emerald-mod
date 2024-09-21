@@ -1,0 +1,81 @@
+{
+	"description": no description yet
+	"name": "crystal"
+  "research": {
+    "parent": "fragment",
+  },
+  "speed": 2.2,
+  "accel": 0.04,
+  "drag": 0.03,
+  "lowAltitude": true,
+  "flying": true,
+  "health": 1100,
+  "hitSize": 20,
+  "armor": 6,
+  "engineOffset": 10,
+  "engineSize": 4,
+  "range": 140,
+  "targetAir": true,
+  "faceTarget": true,
+  "weapons": [
+    {
+      "name": "fragment-weapon",
+      "shootCone": 15,
+      "mirror": true,
+      "alternate": true,
+      "x": 5,
+      "y": 5,
+      "reload": 12,
+	  "rotate": true,
+	  "rotateSpeed": 12,
+      "recoil": 1,
+      "shootSound": "pew",
+	  "ejectEffect": "casing1"
+      "bullet": {
+		"width": 6
+		"height": 11
+        "shootEffect": "shootSmall",
+        "smokeEffect": "shootSmallSmoke",
+        "hitEffect": "shootSmall",
+        "type": "basicBulletType",
+        "damage": 9,
+        "speed": 6,
+        "frontColor": "FFFFFFF",
+        "backColor": "F3E979FF",
+        "lifetime": 25
+      }
+    },
+	 {
+	"name": "crystal-weapon",
+	"shoot": {
+	 "type": "ShootAlternate",
+		"shots": 2
+		"spread": 5
+	}
+      "shootCone": 15,
+      "mirror": true,
+      "alternate": true,
+      "x": 7,
+      "y": -5,
+      "reload": 28,
+	  "rotate": true,
+	  "rotateSpeed": 6,
+      "recoil": 1,
+      "shootSound": "bang",
+	  "ejectEffect": "casing1"
+      "bullet": {
+		"width": 9
+		"height": 10
+        "shootEffect": "shootSmall",
+        "smokeEffect": "shootSmallSmoke",
+        "hitEffect": "shootSmall",
+        "type": "basicBulletType",
+        "damage": 12,
+        "speed": 6,
+        "frontColor": "FFFFFFF",
+        "backColor": "F3E979FF",
+        "lifetime": 25
+      }
+    },
+	]
+}

@@ -1,0 +1,102 @@
+{
+	"description": no description yet
+	"name": "mineral"
+  "research": {
+    "parent": "fragment",
+  },
+  "speed": 1.7,
+  "accel": 0.02,
+  "drag": 0.03,
+  "rotateSpeed": 3,
+  "lowAltitude": true,
+  "flying": true,
+  "health": 12500,
+  "hitSize": 33,
+  "armor": 10,
+  "engineOffset": 18,
+  "engineSize": 5,
+  "range": 140,
+  "targetAir": true,
+  "faceTarget": true,
+   "abilities": [
+     {
+       "type": "mindustry.entities.abilities.SpawnDeathAbility",
+       "unit": "experimental-rocket",
+       "amount": 6,
+	   "fragRandomSpread": 0,
+	   "fragSpread": 20
+     }
+   ]
+  "weapons": [
+    {
+      "name": "fragment-weapon",
+      "shootCone": 15,
+      "mirror": true,
+      "alternate": true,
+      "x": 5,
+      "y": 10,
+      "reload": 12,
+	  "rotate": true,
+	  "rotateSpeed": 12,
+      "recoil": 1,
+      "shootSound": "pew",
+	  "ejectEffect": "casing1"
+      "bullet": {
+		"width": 6
+		"height": 11
+        "shootEffect": "shootSmall",
+        "smokeEffect": "shootSmallSmoke",
+        "hitEffect": "shootSmall",
+        "type": "basicBulletType",
+        "damage": 9,
+        "speed": 6,
+        "frontColor": "FFFFFFF",
+        "backColor": "F3E979FF",
+        "lifetime": 25
+      }
+    },
+	 {
+	"name": "mineral-weapon",
+      "shootCone": 15,
+      "mirror": true,
+      "alternate": true,
+      "x": 13,
+      "y": -8,
+      "reload": 15,
+	  "rotate": true,
+	  "rotateSpeed": 6,
+      "recoil": 0.5,
+      "shootSound": "bang",
+	  "ejectEffect": "casing2"
+	      parts: [
+{
+          type: RegionPart
+          suffix: -barrel
+          under: true
+		  LayerOffset: 1
+          y: 0
+          moves: [
+            {
+              type: PartMove
+              progress: recoil
+              y: -1.5
+            }
+         ]
+      }
+  ]
+      "bullet": {
+		"width": 11
+		"height": 12
+        "shootEffect": "shootSmall",
+        "smokeEffect": "shootSmallSmoke",
+        "hitEffect": "shootSmall",
+        "type": "basicBulletType",
+        "damage": 75,
+        "speed": 7,
+        "frontColor": "FFFFFFF",
+        "backColor": "F3E979FF",
+        "lifetime": 25
+      }
+    },
+	]
+}

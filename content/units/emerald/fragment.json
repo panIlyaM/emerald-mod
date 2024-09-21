@@ -1,0 +1,44 @@
+{
+	"name": "fragment"
+  "research": {
+    "parent": "shard",
+  },
+  "speed": 2.5,
+  "accel": 0.03,
+  "drag": 0.02,
+  "lowAltitude": true,
+  "flying": true,
+  "health": 370,
+  "hitSize": 15,
+  "armor": 4,
+  "engineOffset": 8,
+  "range": 140,
+  "targetAir": true,
+  "faceTarget": false,
+  "weapons": [
+    {
+      "name": "fragment-weapon",
+      "shootCone": 15,
+      "mirror": true,
+      "alternate": true,
+      "x": 5,
+      "y": 1.8,
+      "reload": 8,
+	  "rotate": true,
+      "recoil": 1,
+      "shootSound": "pew",
+	  "ejectEffect": "casing1"
+      "bullet": {
+        "shootEffect": "shootHealYellow",
+        "smokeEffect": "none",
+        "hitEffect": "shootHealYellow",
+        "type": "basicBulletType",
+        "damage": 9,
+        "speed": 6,
+        "frontColor": "FFFFFFF",
+        "backColor": "F3E979FF",
+        "lifetime": 25
+      }
+    },
+	]
+}
