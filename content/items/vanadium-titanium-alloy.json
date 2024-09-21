@@ -1,0 +1,6 @@
+"type": "item"
+"name": "vanadium-titanium alloy"
+"description": "Lightweight and durable composite of titanium and vanadium. Used in advanced units."
+  "cost": "5",
+  "color": "a6a372",
+  "research": "vanadium"

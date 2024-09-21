@@ -1,0 +1,6 @@
+type: material
+name: vanadium
+description: slightly oxidized building material
+hardness: 4.5
+cost: 2
+color: 8b8853

@@ -1,0 +1,6 @@
+type: material
+name: emerald
+description: just an emerald
+hardness: 3
+cost: 1
+color: 50C878
