@@ -1,0 +1,29 @@
+type: GenericCrafter
+name: vanadium-titanium alloy smelter
+description: produces an alloy of vanadium and titanium.
+size: 2
+scaledHealth: 140
+squareSprite: false
+craftEffect: smeltsmoke
+outputItems: [
+  vanadium-titanium-alloy/1
+]
+consumes: {
+ power: 3.5
+  items: [
+    vanadium/1
+    titanium/2
+  ]
+}
+craftTime: 90
+category: crafting
+research: {
+  parent: vanadium
+}
+requirements: [
+  vanadium/40
+  titanium/30
+]
+ambientSound: grinding
+ambientSoundVolume: 0.08
+researchCostMultiplier: 0.5
